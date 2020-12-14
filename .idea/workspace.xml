@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b94a5e1a-0a72-4a2f-972e-b40ac8729743" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1ldaz6M8nDp3RfIhDL9Eucf30EQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\College\Semester5\Human Computer Interaction\Lab\Project\website\assets\images\icon" />
+      <recent name="E:\College\Semester5\Human Computer Interaction\Lab\Project\website\assets\images\categories" />
+      <recent name="E:\College\Semester5\Human Computer Interaction\Lab\Project\website\assets\images\promotions" />
+      <recent name="E:\College\Semester5\Human Computer Interaction\Lab\Project\website\assets\images\logo" />
+      <recent name="E:\College\Semester5\Human Computer Interaction\Lab\Project\website\assets\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b94a5e1a-0a72-4a2f-972e-b40ac8729743" name="Default Changelist" comment="" />
+      <created>1607929681533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607929681533</updated>
+      <workItem from="1607929682649" duration="1816000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1259" y="0" width="1025" height="723" key="dock-window-1" timestamp="1607930227164">
+      <screen x="-1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="-1259" y="0" width="1025" height="723" key="dock-window-1/0.0.1366.736/-1366.0.1366.738@0.0.1366.736" timestamp="1607930227164" />
+  </component>
+</project>
