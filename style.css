@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 150px;
+    height: 100px;
+    /* background-color: blanchedalmond; */
+    background-image: url(./assets/images/logo/logo_bulan.jpg);
+    background-position: center;
+    background-size: 130px;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
+}
+
+.menu-text{
+    color: white;
+}
+
+.menu-text:hover{
+    color: wheat;
+    /* font-size: larger; */
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.vl{
+    border-left: solid;
+    color: wheat;
+    height: 40px;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(82, 49, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.category{
+    width: 400px;
+    display: flex;
+    font-family: 'Varela Round', sans-serif;
+    justify-content: space-around;
+    color: white;
+}
+
+.dropdown{
+    width: 170px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropmenu{
+    display: flex;
+}
+
+.dropmenu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    background-color: rgb(82, 49, 23) ;
+    font-size: small;
+}
+
+.dropmenu a {
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+}
+
+.dropmenu a:hover{
+    color: wheat;
+}
+
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright{
+    color: white;
+    width: 400px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+.footer-content{
+    
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: large;
+}
+
+.payment-pic{
+    width: 55px;
+    height: 30px;
+}
+
+.soc-med{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.soc-med-pic:hover{
+    cursor: pointer;
+}
+
+.soc-med-pic{
+    width: 25px;
+    height: 25px;
+}
+
+.category-content{
+    display: flex;
+    height: 100%;
+    background-color: wheat;
+}
+
+.category-list{
+    width: 15%;
+    background-color: burlywood;
+    /* background-color: rgb(209, 180, 106); */
+    color:black;
+    padding: 30px;        
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sub-category-list{
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+.sub-category-list:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.gallery{
+    /* background-color:thistle; */
+    width: 100%;
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sub-category{
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-content-box{
+    /* background-color: chocolate; */
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-content{
+    /* background-color: rgb(144, 151, 165); */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-pic{
+    width: 250px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+#men-clothe01{
+    background-image: url("./assets/images/categories/kemeja1_men.jpg");
+}
+
+#men-clothe01:hover{
+    background-image: url("./assets/images/categories/kemeja1_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-clothe02{
+    background-image: url("./assets/images/categories/kemeja2_men.jpg");
+}
+
+#men-clothe02:hover{
+    background-image: url("./assets/images/categories/kemeja2_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-clothe03{
+    background-image: url("./assets/images/categories/kemeja3_men.jpg");
+}
+
+#men-clothe03:hover{
+    background-image: url("./assets/images/categories/kemeja3_men_hover.jpg");
+    cursor: pointer;
+}
+
+.gallery-content p{
+    text-align: center;
+    padding-top: 10px;
+    width: 230px;
+}
+
+.gallery-content h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.gallery-content h4{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#men-trouser01{
+    background-image: url("./assets/images/categories/trousers1_men.jpg");
+}
+
+#men-trouser01:hover{
+    background-image: url("./assets/images/categories/trousers1_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-trouser02{
+    background-image: url("./assets/images/categories/trousers2_men.jpg");
+}
+
+#men-trouser02:hover{
+    background-image: url("./assets/images/categories/trousers2_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-trouser03{
+    background-image: url("./assets/images/categories/trousers3_men.jpg");
+}
+
+#men-trouser03:hover{
+    background-image: url("./assets/images/categories/trousers3_men_hover.jpg");
+    cursor: pointer;
+}
+
+#women-clothe01{
+    background-image: url("./assets/images/categories/clothes1_women.jpg");
+}
+
+#women-clothe01:hover{
+    background-image: url("./assets/images/categories/clothes1_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-clothe02{
+    background-image: url("./assets/images/categories/clothes2_women.jpg");
+}
+
+#women-clothe02:hover{
+    background-image: url("./assets/images/categories/clothes2_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-clothe03{
+    background-image: url("./assets/images/categories/clothes3_women.jpg");
+}
+
+#women-clothe03:hover{
+    background-image: url("./assets/images/categories/clothes3_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-trouser01{
+    background-image: url("./assets/images/categories/trousers1_women.jpg");
+}
+
+#women-trouser01:hover{
+    background-image: url("./assets/images/categories/trousers1_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-trouser02{
+    background-image: url("./assets/images/categories/trousers2_women.jpg");
+}
+
+#women-trouser02:hover{
+    background-image: url("./assets/images/categories/trousers2_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-trouser03{
+    background-image: url("./assets/images/categories/trousers3_women.jpg");
+}
+
+#women-trouser03:hover{
+    background-image: url("./assets/images/categories/trousers3_women_hover.jpg");
+    cursor: pointer;
+}
