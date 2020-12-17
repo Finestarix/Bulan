@@ -1,0 +1,53 @@
+#women-clothe01{
+    background-image: url("../images/categories/clothes1_women.jpg");
+}
+
+#women-clothe01:hover{
+    background-image: url("../images/categories/clothes1_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-clothe02{
+    background-image: url("../images/categories/clothes2_women.jpg");
+}
+
+#women-clothe02:hover{
+    background-image: url("../images/categories/clothes2_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-clothe03{
+    background-image: url("../images/categories/clothes3_women.jpg");
+}
+
+#women-clothe03:hover{
+    background-image: url("../images/categories/clothes3_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-trouser01{
+    background-image: url("../images/categories/trousers1_women.jpg");
+}
+
+#women-trouser01:hover{
+    background-image: url("../images/categories/trousers1_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-trouser02{
+    background-image: url("../images/categories/trousers2_women.jpg");
+}
+
+#women-trouser02:hover{
+    background-image: url("../images/categories/trousers2_women_hover.jpg");
+    cursor: pointer;
+}
+
+#women-trouser03{
+    background-image: url("../images/categories/trousers3_women.jpg");
+}
+
+#women-trouser03:hover{
+    background-image: url("../images/categories/trousers3_women_hover.jpg");
+    cursor: pointer;
+}

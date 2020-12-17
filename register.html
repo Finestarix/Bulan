@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bulan - Register Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <a href="./index.html">
+        <div class="logo"></div>
+    </a>
+    <div class="menu">
+        <a href="#">
+            <div class="menu-text">A B O U T &nbsp U S</div>
+        </a>
+        <div class="vl"></div>
+        <a href="./register.html">
+            <div class="menu-text">L O G I N</div>
+        </a>
+    </div>
+</header>
+
+<!-- Content -->
+<div class="content flex-center">
+
+    <div class="container flex-center flex-col">
+
+        <div class="title">Register Form</div>
+
+        <div class="flex-col">
+
+            <div class="form-group flex-row">
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <input id="email" type="text" placeholder="Email" autocomplete="off">
+            </div>
+
+            <div class="form-group flex-row">
+                <div>
+                    <label for="password">Password</label>
+                </div>
+                <input id="password" type="password" placeholder="Password" autocomplete="off">
+            </div>
+
+            <div class="form-group flex-row">
+                <div>
+                    <label for="address">Address</label>
+                </div>
+                <textarea id="address" placeholder="Address" autocomplete="off"></textarea>
+            </div>
+
+            <div class="form-group flex-row">
+                <div>
+                    <label for="address">Gender</label>
+                </div>
+                <div class="radio-container">
+                    <div>
+                        <input id="male" type="radio" name="gender">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input id="female" type="radio" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input id="terms" type="checkbox" name="share">
+                <label for="terms">Agree with Terms and Condition</label>
+            </div>
+
+            <div id="error"></div>
+
+            <input type="submit" value="Submit" onclick="action_submit()">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <div class="text-footer">PAYMENT</div>
+        <div class="soc-med">
+            <img src="./assets/images/icon/visa.png" alt="" class="payment-pic">
+            <img src="./assets/images/icon/mastercard.png" alt="" class="payment-pic">
+        </div>
+    </div>
+    <div class="copyright">&copy;2020-2022 bulan. All Rights Reserved</div>
+    <div class="footer-content">
+        <div class="text-footer">FIND US</div>
+        <div class="soc-med">
+            <a href="http://www.facebook.com">
+                <img src="./assets/images/icon/facebook.png" alt="" class="soc-med-pic">
+            </a>
+            <a href="http://www.instagram.com">
+                <img src="./assets/images/icon/instagram.png" alt="" class="soc-med-pic">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Snackbar -->
+<div id="snackbar-error" style="background-color: hsl(354, 70%, 54%); color: white"></div>
+<div id="snackbar-success" style="background-color: hsl(134, 61%, 41%); color: white"></div>
+
+</body>
+
+<script src="./assets/js/register.js"></script>
+
+</html>

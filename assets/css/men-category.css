@@ -1,0 +1,54 @@
+#men-clothe01{
+    background-image: url("../images/categories/kemeja1_men.jpg");
+}
+
+#men-clothe01:hover{
+    background-image: url("../images/categories/kemeja1_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-clothe02{
+    background-image: url("../images/categories/kemeja2_men.jpg");
+}
+
+#men-clothe02:hover{
+    background-image: url("../images/categories/kemeja2_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-clothe03{
+    background-image: url("../images/categories/kemeja3_men.jpg");
+}
+
+#men-clothe03:hover{
+    background-image: url("../images/categories/kemeja3_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-trouser01{
+    background-image: url("../images/categories/trousers1_men.jpg");
+}
+
+#men-trouser01:hover{
+    background-image: url("../images/categories/trousers1_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-trouser02{
+    background-image: url("../images/categories/trousers2_men.jpg");
+}
+
+#men-trouser02:hover{
+    background-image: url("../images/categories/trousers2_men_hover.jpg");
+    cursor: pointer;
+}
+
+#men-trouser03{
+    background-image: url("../images/categories/trousers3_men.jpg");
+}
+
+#men-trouser03:hover{
+    background-image: url("../images/categories/trousers3_men_hover.jpg");
+    cursor: pointer;
+}
+
