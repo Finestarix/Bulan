@@ -28,63 +28,68 @@
 </header>
 
 <!-- Content -->
-<div class="content flex-center">
+<div class="content-register flex-center" style="width: 100%">
 
-    <div class="container flex-center flex-col">
+    <div class="content container flex-center">
 
-        <div class="title">Register Form</div>
+        <img src="assets/images/register/picture.jpg" alt="" height="400">
 
-        <div class="flex-col">
+        <div class="content-form flex-center flex-col">
 
-            <div class="form-group flex-row">
-                <div>
-                    <label for="email">Email</label>
-                </div>
-                <input id="email" type="text" placeholder="Email" autocomplete="off">
-            </div>
+            <div class="title">Register Form</div>
 
-            <div class="form-group flex-row">
-                <div>
-                    <label for="password">Password</label>
-                </div>
-                <input id="password" type="password" placeholder="Password" autocomplete="off">
-            </div>
+            <div class="flex-col">
 
-            <div class="form-group flex-row">
-                <div>
-                    <label for="address">Address</label>
-                </div>
-                <textarea id="address" placeholder="Address" autocomplete="off"></textarea>
-            </div>
-
-            <div class="form-group flex-row">
-                <div>
-                    <label for="address">Gender</label>
-                </div>
-                <div class="radio-container">
+                <div class="form-group flex-row">
                     <div>
-                        <input id="male" type="radio" name="gender">
-                        <label for="male">Male</label>
+                        <label for="email">Email</label>
                     </div>
+                    <input id="email" type="text" placeholder="Email" autocomplete="off">
+                </div>
+
+                <div class="form-group flex-row">
                     <div>
-                        <input id="female" type="radio" name="gender">
-                        <label for="female">Female</label>
+                        <label for="password">Password</label>
+                    </div>
+                    <input id="password" type="password" placeholder="Password" autocomplete="off">
+                </div>
+
+                <div class="form-group flex-row">
+                    <div>
+                        <label for="address">Address</label>
+                    </div>
+                    <textarea id="address" placeholder="Address" autocomplete="off"></textarea>
+                </div>
+
+                <div class="form-group flex-row">
+                    <div>
+                        <label for="address">Gender</label>
+                    </div>
+                    <div class="radio-container">
+                        <div>
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Female</label>
+                        </div>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <input id="terms" type="checkbox" name="share">
+                    <label for="terms">Agree with Terms and Condition</label>
+                </div>
+
+                <div id="error"></div>
+
+                <input type="submit" value="Submit" onclick="action_submit()">
             </div>
 
-            <div class="form-group">
-                <input id="terms" type="checkbox" name="share">
-                <label for="terms">Agree with Terms and Condition</label>
-            </div>
-
-            <div id="error"></div>
-
-            <input type="submit" value="Submit" onclick="action_submit()">
         </div>
 
     </div>
-
 </div>
 
 <!-- Footer -->
@@ -111,7 +116,7 @@
 </div>
 
 <!-- Snackbar -->
-<div id="snackbar-error" style="background-color: hsl(354, 70%, 54%); color: white"></div>
+<div id="snackbar-error" style="background-color: hsl(354, 70%, 54%); erarti ya color: white"></div>
 <div id="snackbar-success" style="background-color: hsl(134, 61%, 41%); color: white"></div>
 
 </body>
