@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+   
+.container {
+  width: 100%;
+  height: 600px;
+  font-family: 'Varela Round', sans-serif;
+  position: relative;
+}
+
+.wrapper-box {
+  display: block;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  
+  transform: scale(1);
+}
+  
+/* Slides Background Color */
+.slide-1 {
+  background-color: burlywood;
+  left: 0;
+}
+.slide-2 {
+  background-color:lightgrey;
+  left: 100%
+}
+.slide-3 {
+  background-color: #a9785c;
+  left: 200%
+}
+
+.img-fit{
+  height: fit-content;
+}
+
+.slider-content {
+  width: 635px;
+  padding-left: 100px;
+}
+
+.slider h2 {
+  color: #333333;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateX(500px);
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+  
+.shop-now-btn {
+  background-color: burlywood;
+  width: 220px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s;
+}
+  
+.shop-now-btn:hover {
+  box-shadow: 1px 1px 60px -10px rgba(3, 3, 3, 0.349);
+}
+  
+.shop-now-btn:after {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  right: 35px;
+  top: 18px;
+}
+  
+.slider .buy-now-btn:focus,
+.navigation .login-btn:focus {
+  outline: none;
+}
+
+.slider h4 {
+  font-size: 22px;
+  font-family: "Oswald";
+  color: rgba(51, 51, 51, 0.349);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateX(500px);
+  transition-delay: 1.4s;
+}
+  
+.slider > img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(500px);
+}
+  
+.slide-1 > img {
+  right: 0;
+}
+.slider h2 {
+  transition: transform 800ms, opacity 800ms;
+  transition-delay: 1s;
+}
+
+.slider > img {
+  transition: transform 800ms, opacity 800ms;
+  transition-delay: 1.2s;
+}
+
+.slider-pagination {
+  position: absolute;
+  bottom: 30px;
+  width: 575px;
+  left: 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.slider-pagination label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.slide-radio1:checked ~ .slider-pagination .page1,
+.slide-radio2:checked ~ .slider-pagination .page2,
+.slide-radio3:checked ~ .slider-pagination .page3,
+.slide-radio4:checked ~ .slider-pagination .page4 {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgb(73, 59, 40);
+}
+ 
+/* Slider Slide Effect */
+.slide-radio1:checked ~ .slider {
+  transform: translateX(0%);
+}
+.slide-radio2:checked ~ .slider {
+  transform: translateX(-100%);
+}
+.slide-radio3:checked ~ .slider {
+  transform: translateX(-200%);
+}
+.slide-radio4:checked ~ .slider {
+  transform: translateX(-300%);
+}
+ 
+.slide-radio1:checked ~ .slide-1 h2,
+.slide-radio2:checked ~ .slide-2 h2,
+.slide-radio3:checked ~ .slide-3 h2,
+.slide-radio1:checked ~ .slide-1 h4,
+.slide-radio2:checked ~ .slide-2 h4,
+.slide-radio3:checked ~ .slide-3 h4,
+.slide-radio1:checked ~ .slide-1 > img,
+.slide-radio2:checked ~ .slide-2 > img,
+.slide-radio3:checked ~ .slide-3 > img {
+  transform: translateX(0);
+  opacity: 1
+}
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  .slider h2 {
+    font-size: 20px;
+  }
+  .slider h4 {
+    font-size: 16px;
+  }
+  
+  .slider-content {
+    padding: 0 2%
+  }
+  
+  .navigation {
+    padding: 0 2%;
+  }
+  
+  .navigation-left {
+    display: none;
+  }
+  
+  .number-pagination {
+    right: 2%;
+  }
+  .slider-pagination {
+    left: 2%;
+  }
+  
+  .slider .buy-now-btn {
+    padding: 0 15px;
+    width: 175px;
+    height: 42px;
+  }
+  
+  .slider .buy-now-btn:after {
+    top: 15px;
+  }
+  
+  .slider > img {
+    right: 2%;
+  }
+  
+  .slide-1 > img {
+    right: -110px;
+  }
+}
+

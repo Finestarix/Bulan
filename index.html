@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bulan - Home Page</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home-banner.css">
+    <link rel="stylesheet" href="assets/css/home-categories.css">
 </head>
 <body>
 
@@ -46,10 +48,77 @@
     </div>
 </nav>
 
-<!-- Content -->
-<div class="content">
+<!-- Container -->
+<section class="container">
+    
+    <!-- Wrapper -->
+    <div class="wrapper-box">
+        <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+        <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+        <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+        
+        <!-- Slider Pagination -->
+        <div class="slider-pagination">
+        <label for="slider_1" class="page1"></label>
+        <label for="slider_2" class="page2"></label>
+        <label for="slider_3" class="page3"></label>
+        </div>
+    
+        <!-- Sale Promotion -->
+        <div class="slider slide-1">
+            <img class="img-fit" src="assets/images/home-banner/promotion.jpg" alt="">       
+        </div>
+    
+        <!-- Man Category -->
+        <div class="slider slide-2">
+        <img src="assets/images/home-banner/man1.png" alt="">
+        <div class="slider-content">
+            <h4>New Product</h4>
+            <h2>Jacket Ultra Comfy With Split</h2>
+            <a href="./men-category.html">
+                <button type="button" class="shop-now-btn" name="button">Shop Now</button>
+            </a>
+        </div>
+        
+        </div>
+    
+        <!-- Woman Category -->
+        <div class="slider slide-3">
+        <img src="assets/images/home-banner/woman1.png" alt="">
+        <div class="slider-content">
+            <h4>New Product</h4>
+            <h2>Tiara Formal White Blazer </h2>
+            <a href="./women-category.html">
+                <button type="button" class="shop-now-btn" name="button">Shop Now</button>
+            </a>
+        </div>
+        
+        </div>
+    
+    </div>
 
+</section>
+
+<div class="categories">
+    <h1>CATEGORIES</h1>
+
+    <div class="container-categories">
+        <div class="categories-men">
+            <a href="./men-category.html">
+            <img class="img-size" src="assets/images/home-banner/men.jpg" alt="men categories"> 
+            </a>
+        </div>
+        
+        <div class="categories-women">
+            <a href="./women-category.html"> 
+            <img class="img-size" src="assets/images/home-banner/women.jpg" alt="women categories">
+            </a>
+        </div>
+    </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="assets/js/home-banner.js"></script>
 
 <!-- Footer -->
 <div class="footer">
