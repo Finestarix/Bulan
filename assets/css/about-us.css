@@ -55,3 +55,11 @@ hr {
     font-size: 15px;
     line-height: 20px;
 }
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+    .content-top-text {
+        font-size: 20px;
+    }
+
+}

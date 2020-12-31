@@ -3,10 +3,12 @@
 }
    
 .container {
+  background-color: #f6d89c;
   width: 100%;
-  height: 600px;
+  height: 500px;
   font-family: 'Varela Round', sans-serif;
   position: relative;
+  overflow: hidden;
 }
 
 .wrapper-box {
@@ -23,7 +25,6 @@
   display: flex;
   width: 100%;
   height: 100%;
-  position: absolute;
   left: 0;
   top: 0;
   opacity: 1;
@@ -33,13 +34,34 @@
   align-items: center;
   justify-content: flex-start;
   align-content: center;
-  
   transform: scale(1);
+  position: absolute;
 }
-  
+
+/* dot */
+.slider-dot {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  width: 550px;
+  right: 110px;
+  z-index: 1000;
+}
+.slider-dot label {
+  width: 13px;
+  height: 13px;
+  border-radius: 40%;
+  display: inline-block;
+  background:  white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
 /* Slides Background Color */
 .slide-1 {
-  background-color: burlywood;
+  background-color: #dfd2b2;
+  /* background-image: url("assets/images/home-banner/promotion.jpg"); */
   left: 0;
 }
 .slide-2 {
@@ -55,42 +77,30 @@
   height: fit-content;
 }
 
-.slider-content {
-  width: 635px;
-  padding-left: 100px;
-}
-
-.slider h2 {
-  color: #333333;
-  font-weight: 900;
-  text-transform: capitalize;
-  font-size: 60px;
-  font-weight: 300;
-  line-height: 1.2;
-  opacity: 0;
-  transform: translateX(500px);
-  margin-top: 0;
-  letter-spacing: 2px;
+.content-banner {
+  padding-left: 150px;
+  width: 630px;
 }
   
 .shop-now-btn {
   background-color: burlywood;
-  width: 220px;
+  width: 200px;
   height: 50px;
-  border-radius: 30px;
+  border-radius: 40px;
   border: none;
+  cursor: pointer;
   font-family: 'Varela Round', sans-serif;
   font-size: 20px;
   font-weight: 100;
   color: #fff;
   text-align: center;
   position: relative;
-  cursor: pointer;
-  transition: all .2s;
 }
   
 .shop-now-btn:hover {
-  box-shadow: 1px 1px 60px -10px rgba(3, 3, 3, 0.349);
+  box-shadow: 2px 1px 60px -10px rgba(3, 3, 3, 0.349);
+  color: black;
+  font-weight: bold;
 }
   
 .shop-now-btn:after {
@@ -99,12 +109,18 @@
   text-transform: uppercase;
   position: absolute;
   right: 35px;
-  top: 18px;
+  top: 20px;
 }
-  
-.slider .buy-now-btn:focus,
-.navigation .login-btn:focus {
-  outline: none;
+
+.slider h2 {
+  color: #363434;
+  font-size: 60px;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateX(500px);
+  margin-top: 0;
+  transition-delay: 1s;
+  transition: transform 800ms, opacity 900ms;
 }
 
 .slider h4 {
@@ -112,11 +128,11 @@
   font-family: "Oswald";
   color: rgba(51, 51, 51, 0.349);
   font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 2;
   opacity: 0;
-  transform: translateX(500px);
-  transition-delay: 1.4s;
+  transform: translateX(300px);
+  transition-delay: 1.3s;
+  transition: transform 500ms, opacity 500ms;
 }
   
 .slider > img {
@@ -125,48 +141,22 @@
   bottom: 0;
   height: 100%;
   opacity: 0;
-  transform: translateX(500px);
+  transform: translateX(300px);
+  transition: transform 500ms, opacity 00ms;
+  transition-delay: 0.6s;
 }
   
 .slide-1 > img {
   right: 0;
 }
-.slider h2 {
-  transition: transform 800ms, opacity 800ms;
-  transition-delay: 1s;
-}
 
-.slider > img {
-  transition: transform 800ms, opacity 800ms;
-  transition-delay: 1.2s;
-}
-
-.slider-pagination {
-  position: absolute;
-  bottom: 30px;
-  width: 575px;
-  left: 100px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-}
-.slider-pagination label {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  display: inline-block;
-  background: #fff;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.slide-radio1:checked ~ .slider-pagination .page1,
-.slide-radio2:checked ~ .slider-pagination .page2,
-.slide-radio3:checked ~ .slider-pagination .page3,
-.slide-radio4:checked ~ .slider-pagination .page4 {
-  width: 14px;
-  height: 14px;
-  border: 2px solid rgb(73, 59, 40);
+.slide-radio1:checked ~ .slider-dot .page1,
+.slide-radio2:checked ~ .slider-dot .page2,
+.slide-radio3:checked ~ .slider-dot .page3{
+  width: 25px;
+  height: 25px;
+  background:  burlywood;
+  border: 4px solid rgb(73, 59, 40);
 }
  
 /* Slider Slide Effect */
@@ -179,10 +169,6 @@
 .slide-radio3:checked ~ .slider {
   transform: translateX(-200%);
 }
-.slide-radio4:checked ~ .slider {
-  transform: translateX(-300%);
-}
- 
 .slide-radio1:checked ~ .slide-1 h2,
 .slide-radio2:checked ~ .slide-2 h2,
 .slide-radio3:checked ~ .slide-3 h2,
@@ -198,40 +184,64 @@
 
 /* Responsive */
 @media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 350px;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrapper-box{
+    width: 100%;
+    max-height: 300px;
+  }
+  
   .slider h2 {
     font-size: 20px;
+    font-weight: bold;
   }
+  
   .slider h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
   
-  .slider-content {
-    padding: 0 2%
-  }
-  
-  .navigation {
+  .content-banner {
     padding: 0 2%;
+    padding-left: 70px;
   }
-  
-  .navigation-left {
-    display: none;
-  }
-  
-  .number-pagination {
-    right: 2%;
-  }
-  .slider-pagination {
+
+  /* ================= */
+  .slider-dot {
     left: 2%;
+    left: 80px;
   }
-  
-  .slider .buy-now-btn {
+
+  .slider-dot label {
+    width: 9px;
+    height: 9px;
+    border-radius: 40%;
+  }
+
+  .radio1:checked ~ .slider-dot .page1,
+  .radio2:checked ~ .slider-dot .page2,
+  .radio3:checked ~ .slider-dot .page3{
+  width: 18px;
+  height: 18px;
+  background:  burlywood;
+  border: 3px solid rgb(73, 59, 40);
+  }
+  /* ================= */
+
+  .slider .shop-now-btn {
     padding: 0 15px;
-    width: 175px;
-    height: 42px;
+    width: 105px;
+    height: 32px;
+    font-size: 15px;
   }
   
-  .slider .buy-now-btn:after {
-    top: 15px;
+  .slider .shop-now-btn:after {
+    top: 20px;
   }
   
   .slider > img {
@@ -240,6 +250,10 @@
   
   .slide-1 > img {
     right: -110px;
+  }
+
+  .slide-1 > img {
+    left: 0;
   }
 }
 

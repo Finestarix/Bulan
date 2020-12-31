@@ -15,21 +15,44 @@
     /* background-color: lightcoral; */
     padding: 40px;
     width: 800px;
-    /* height: inherit; */
     justify-content: space-around;
 }
 .img-size{
     height: 330px;
     width: 300px;
-
 }
 
 .categories-men{
     display: flex;
-    /* background-color: cadetblue; */
+}
+
+.categories-men:hover{
+    box-shadow: 2px 1px 60px -10px rgba(3, 3, 3, 0.349);
 }
 
 .categories-women{
     display: flex;
-    /* background-color: blue; */
+}
+
+.categories-women:hover{
+    box-shadow: 2px 1px 60px -10px rgba(3, 3, 3, 0.349);
+}
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+    .img-size{
+        height: 220px;
+        width: 200px;
+    }
+
+    .container-categories{
+        display: flex;
+        padding: 10px;
+        width: 500px;
+        justify-content: space-around;
+    }
+
+    .categories h1{
+        font-size: 20px;
+    }
 }
