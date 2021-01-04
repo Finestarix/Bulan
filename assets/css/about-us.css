@@ -59,7 +59,26 @@ hr {
 /* Responsive */
 @media only screen and (max-width: 800px) {
     .content-top-text {
-        font-size: 20px;
+        font-size: 17px;
     }
-
+    .content-bottom-text{
+        font-size: 12px;
+    }
+    .content-bottom-text-title{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .content-bottom-map{
+        width: 150px;
+        height: 150px;
+    }
+    .content-top{
+        padding: 30px 0 0 0;
+    }
+    .content-top-text{
+        margin: 30px 0;
+    }
+    .content-bottom{
+        padding: 0 0 30px 0;
+    }
 }

@@ -175,6 +175,8 @@ nav{
     .header{
         width: 100%;
         height: 60px;
+        display: flex;
+        align-items: center;
     }
     
     .logo{
@@ -206,6 +208,12 @@ nav{
     }
 
     /* footer */
+    .footer-content{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .footer{
         height: 80px;
     }
@@ -220,13 +228,68 @@ nav{
     }
 
     .payment-pic{
-        width: 35px;
+        width: 25px;
         height: 10px;
     }
+    
 
     .soc-med-pic{
         width: 15px;
         height: 15px;
         /*padding: 0 10px;*/
+    }
+    .soc-med{
+        width: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .menu{
+        width: 180px;
+        height: 30px;
+    }
+    .menu-text{
+        font-size: 10px;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+    }
+    .dropdown div{
+        font-size: 10px;
+    }
+    .dropdown a{
+        width: 100px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+    .soc-med{
+        width: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-content{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-footer{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .payment-pic{
+        width: 20px;
+        height: 10px;
+    }
+    .soc-med-pic{
+        width: 10px;
+        height: 10px;
     }
 }
